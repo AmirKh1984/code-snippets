@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    
+    <title>
+        Baseline Code Snippets Document      
+    </title>
+    <link rel="stylesheet" href="parts/normalize.css">
+    <link rel="stylesheet" href="parts/style.css">
+    <link rel="stylesheet" href="parts/exercise-files.css">
+    <link href="parts/prism.css" rel="stylesheet" />
+
+    <script src="parts/prism.js"></script>    
+    
+</head>
+<body>
+
+    <header class="masthead">
+        <div class="wrapper">
+            <h1 class="site-title">Series Title:<br>Course Name</h1>    
+            <div class="sub">Code Snippets</div>
+        </div>
+    </header>
+    
+    <nav class="navigation">
+        <ul class="wrapper">
+            <li>
+                <a href="#chapter-01">Chapter 1: What is this?</a>
+                <ul>
+                    <li><a href="#movie-0101">1.1 - A Brief Explanation</a></li>
+                    <li><a href="#movie-0102">1.2 - Goals for the project</a></li>
+                    <li><a href="#movie-0103">1.3 - Components used in this project</a></li>
+                    <li><a href="#movie-0104">1.4 - Contribution and evolution</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#chapter-02">Chapter 2: Code Examples?</a>
+                <ul>
+                    <li><a href="#movie-0201">2.1 - HTML</a></li>
+                    <li><a href="#movie-0202">2.2 - CSS</a></li>
+                    <li><a href="#movie-0203">2.3 - JavaScript</a></li>
+                    <li><a href="#movie-0204">2.4 - PHP</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="wrapper">
+
+        <div id="main">
+            <section id="chapter-01" class="chapter">
+                <h2 class="chapter-title">Chapter 1:  What is this?</h1>
+                <article id="movie-0101" class="movie">
+                    <h3 class="movie-title">1.1 - A Brief Explanation</h3>
+                    <h4>The idea of browser-based exercise files</h4>
+                    <p>This project grew out of a need to provide a consistent code snippet experience for viewers. The idea is to provide a web-based set of code snippets that can be styled to work in all browsers and is easily read and accessed. As a bonus the code snippet document itself can serve as a best-practice example of a simple web-based application.</p>
+                    <p>The baseline code snippet document uploaded as the initial commit is currently shipping with a series of WordPress courses, debuting with <a href="http://www.lynda.com/underscores-tutorials/WordPress-Building-Themes-from-Scratch-Using-Underscores/163092-2.html" title="Learn to build WordPress themes from scratch using the underscores starter theme with lynda.com" target="_blank">WordPress: Building Themes from Scratch Using Underscores</a>.
+                </article><!-- .movie -->
+                <article id="movie-0102" class="movie">
+                    <h3 class="movie-title">1.2 - Goals for the project</h3>
+                    <p>The project was built with a few basic goals in mind:</p>
+                    <ul>
+                        <li>HTML/CSS/JS-based code snippets</li>
+                        <li>Code highlighting</li>
+                        <li>Snippet navigation</li>
+                        <li>Responsive Web Design</li>
+                    </ul>
+                    <p>Moving forward some additional goals (to be expanded) are:</p>
+                    <ul>
+                        <li>Persistent nav menu at the top</li>
+                        <li>&ldquo;Click to copy&rdquo; button in snippets</li>
+                        <li>Paged navigation</li>
+                        <li>Gist and/or Codepen integration for continuous updates</li>
+                    </ul>
+                </article><!-- .movie -->
+                <article id="movie-0103" class="movie">
+                    <h3 class="movie-title">1.3 - Components used in this project</h3>
+                    <p>For styling this project uses two external resources: <a href="http://necolas.github.io/normalize.css/" title="Normalize.css" target="_blank">Normalize.css</a> and type sizing from <a href="http://typecast.com/blog/a-more-modern-scale-for-web-typography" title="A More Modern Scale for Web Typography" target="_blank"> by Jason Pamental. The former is found in parts/normalize.css, the latter is baked into parts/style.css.</p>
+                    <p>For code highlighting <a href="http://prismjs.com/" title="Prism.js" target="_blank">Prism.js</a> is used through parts/prism.js and parts/prism.css. Prism was chosen because the styling is entirely CSS based and applied with simple classes while the markup uses only <pre>&lt;pre&gt;&lt;code&gt;</pre> to highlight code which is correct to web standards.</p>
+                    <p>The <a href="http://prismjs.com/" title="Prism.js" target="_blank">Prism.js</a> website is unjustifiably short on code examples but provides some glimpses of the impressive potential this extension has including line highlighting and other fun stuff. Identifying a particular block of code for highlighting is done by applying a simple semantic class as in the example below. More examples are added to <a href="#chapter-02">Chapter 2</a> of this document. Note the use of HTML entities for the opening less-than sign in the code example itself.</p>
+                    <h4>Prism.js markup example for HTML:</h4>
+                    <pre><code class="language-markup">
+&lt;pre&gt;&lt;code class="language-markup"&gt;
+&amp;lt;h1>The Title&amp;lt;/h1>
+&amp;lt;p>This is where the paragraph text will go.&amp;lt;/p>
+&lt;/code&gt;&lt;/pre&gt;
+                    </code></pre>
+                </article><!-- .movie -->
+                <article id="movie-0104" class="movie">
+                    <h3 class="movie-title">1.4 - Contributon and Evolution</h3>
+                    <p>I am publishing this project on GitHub to allow it to grow and evolve dynamically. To this end I would like your help. To contribute to the project, fork the repo, make changes to anything you see, and submit pull requests back to me. If you find any issues or want to propose new features, do so in the Issues tab of the original repo.</p>
+                </article><!-- .movie -->
+            </section><!-- #chapter-01 -->
+
+            <section id="chapter-02" class="chapter">
+                <h2 class="chapter-title">Chapter 2: Code Examples</h2>
+                <article id="movie-0201" class="movie">
+                    <h3 class="movie-title">2.1 - HTML</h3>
+                    <h4>In index.html:</h4>
+                    <pre><code class="language-markup">
+&lt;nav class="navigation">
+        &lt;ul class="wrapper">
+            &lt;li>
+                &lt;a href="#chapter-01">Chapter 1: What is this?&lt;/a>
+                &lt;ul>
+                    &lt;li>&lt;a href="#movie-0101">1.1 - A Brief Explanation&lt;/a>&lt;/li>
+                    &lt;li>&lt;a href="#movie-0102">1.2 - Goals for the project&lt;/a>&lt;/li>
+                    &lt;li>&lt;a href="#movie-0103">1.3 - Components used in this project&lt;/a>&lt;/li>
+                    &lt;li>&lt;a href="#movie-0104">1.4 - Contribution and evolution&lt;/a>&lt;/li>
+                &lt;/ul>
+            &lt;/li>
+            &lt;li>
+                &lt;a href="#chapter-02">Chapter 2: Code Examples?&lt;/a>
+                &lt;ul>
+                    &lt;li>&lt;a href="#movie-0201">2.1 - HTML&lt;/a>&lt;/li>
+                    &lt;li>&lt;a href="#movie-0202">2.2 - CSS&lt;/a>&lt;/li>
+                    &lt;li>&lt;a href="#movie-0203">2.3 - JavaScript&lt;/a>&lt;/li>
+                    &lt;li>&lt;a href="#movie-0204">2.4 - PHP&lt;/a>&lt;/li>
+                &lt;/ul>
+            &lt;/li>
+        &lt;/ul>
+    &lt;/nav>
+                    </code></pre>
+                </article><!-- .movie -->
+                <article id="movie-0202" class="movie">
+                    <h3 class="movie-title">2.2 - CSS</h3>
+                    <h4>In parts/style.css:</h4>
+                    <pre><code class="language-css">
+.navigation {
+    background: hsl(0, 0%, 45%);
+    padding: .1em 0;
+}
+
+.navigation ul {
+    font-family: 'helvetica', 'arial', sans-serif;
+    font-size: 20px;
+}
+
+.navigation li {
+    font-weight: bold;
+}
+
+.navigation ul ul {
+    margin-left: 2em;
+    margin-bottom: 1em;
+}
+
+.navigation ul ul li {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.navigation a {
+    display: block;
+    padding: .3em 0;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+                    </code></pre>
+                </article><!-- .movie -->
+                <article id="movie-0203" class="movie">
+                    <h3 class="movie-title">2.3 - JavaScript</h3>
+                    <h4>In a .js file:</h4>
+                    <pre><code class="language-javascript">
+/* 
+ * Toggles search on and off
+ */
+jQuery(document).ready(function($){
+    $(".search-toggle").click(function(){
+        $("#search-container").slideToggle('slow', function(){
+            $('.search-toggle').toggleClass('active');
+        });
+        // Optional return false to avoid the page "jumping" when clicked
+        return false;
+    });
+});
+                    </code></pre>
+                </article><!-- .movie -->
+                <article id="movie-0204" class="movie">
+                    <h3 class="movie-title">2.4 - PHP</h3>
+                    <h4>In a .php file:</h4>
+                    <pre><code class="language-php">
+function my_simone_paging_nav() {
+    // Don't print empty markup if there's only one page.
+    if ( $GLOBALS['wp_query']->max_num_pages < 2 ) {
+        return;
+    }
+
+    $paged        = get_query_var( 'paged' ) ? intval( get_query_var( 'paged' ) ) : 1;
+    $pagenum_link = html_entity_decode( get_pagenum_link() );
+    $query_args   = array();
+    $url_parts    = explode( '?', $pagenum_link );
+
+    if ( isset( $url_parts[1] ) ) {
+        wp_parse_str( $url_parts[1], $query_args );
+    }
+
+    $pagenum_link = remove_query_arg( array_keys( $query_args ), $pagenum_link );
+    $pagenum_link = trailingslashit( $pagenum_link ) . '%_%';
+
+    $format  = $GLOBALS['wp_rewrite']->using_index_permalinks() && ! strpos( $pagenum_link, 'index.php' ) ? 'index.php/' : '';
+    $format .= $GLOBALS['wp_rewrite']->using_permalinks() ? user_trailingslashit( 'page/%#%', 'paged' ) : '?paged=%#%';
+
+    // Set up paginated links.
+    $links = paginate_links( array(
+        'base'     => $pagenum_link,
+        'format'   => $format,
+        'total'    => $GLOBALS['wp_query']->max_num_pages,
+        'current'  => $paged,
+        'mid_size' => 2,
+        'add_args' => array_map( 'urlencode', $query_args ),
+        'prev_text' => __( '&larr; Previous', 'my-simone' ),
+        'next_text' => __( 'Next &rarr;', 'my-simone' ),
+        'type'      => 'list',
+    ) );
+
+    if ( $links ) :
+
+    ?>
+    &lt;nav class="navigation paging-navigation" role="navigation">
+        &lt;h1 class="screen-reader-text">&lt;?php _e( 'Posts navigation', 'my-simone' ); ?>&lt;/h1>
+            &lt;?php echo $links; ?>
+    &lt;/nav>&lt;!-- .navigation -->
+    &lt;?php
+    endif;
+}
+                    </code></pre>
+                </article><!-- .movie -->
+    		</section><!-- #chapter-02 -->
+        </div><!-- #main -->
+
+        
+    </div><!-- .wrapper -->
+    <footer class="footer">
+        <div class="colophon">&copy;2014 - The Contributors</div>
+        <div class="origin"><a href="http://github.com/mor10/code-snippets" title="Code Snippets on GitHub" target="_blank">Find this project on GitHub</a></div>
+  
+    </footer>
+</body>
+</html>
